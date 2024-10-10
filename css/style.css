@@ -144,12 +144,12 @@ footer img {
 		justify-content: center;
 	}
 	.container .max-width .logo img {
-		width: 60px;
-		height: 60px;
+		width: 70px;
+		height: 70px;
 
 	}
 	.container .max-width .content {
-		font-size: 12px;
+		font-size: 15px;
 		text-align: center;
 	}
 	.container .title iframe {

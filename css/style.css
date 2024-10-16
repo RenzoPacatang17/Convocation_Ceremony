@@ -4,6 +4,7 @@ html{
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 	font-family: Arial, sans-serif;
 }
 
@@ -12,7 +13,7 @@ html{
 	display: flex;
 	flex-wrap: wrap;
 	background: white;
-	width: 30%;
+	width: 50%;
 	margin: 10px auto;
 	padding: 0 15px;
 	justify-content: center;
@@ -23,6 +24,7 @@ html{
 }
 .container .max-width .logo {
 	display: inline-block;
+
 }
 .container .max-width .content {
 	display: inline-block;
@@ -53,107 +55,121 @@ footer img {
 	margin: 20px 0;
 }
 
-/*Media Quiries*/
-@media (max-width: 1025px) {
+/* Responsive Media Query code for max-width: 1024px */
+
+@media screen and (max-width: 1024px) {
+	* {
+		max-width: 100%;
+	}
 	.container {
 		display: flex;
 		flex-wrap: wrap;
-		width: 30%;
-		margin: 0 auto;
+		background: white;
+		width: 70%;
+		margin: 10px auto;
+		padding: 0 15px;
+		justify-content: center;
 	}
-	.container .title .content {
+	.container .max-width {
+		display: flex;
+		align-items: center;
+	}
+	.container .max-width .logo {
+		display: inline-block;
+	}
+	.container .max-width .content {
+		display: inline-block;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 18px
+	}
+	.container .max-width .content .capital {
+		text-transform: capitalize;
 		font-size: 18px;
 	}
-}
-@media (max-width: 1024px) {
-	.container {
-		display: flex;
-		flex-wrap: wrap;
-		width: 80%;
-		margin: 0 auto;
+
+	/*National Anthem*/
+
+	.container .title {
+		text-transform: capitalize;
+		text-align: center;
 	}
-	.container .title .content {
-		font-size: 20px;
+	.container .title h2 {
+		margin:  10px 0;
 	}
-	.container .title iframe {
-		width: 760px;
-		height: 515px;
+	.title iframe {
+		width: 650px;
+		height: 370px;
 	}
-}
-@media (max-width: 991px) {
-	.container {
-		display: flex;
-		flex-wrap: wrap;
-		width: 80%;
-		margin: 0 auto;
+	.container .title .content p {
+		text-transform: capitalize;
+		padding: 15px 0;
+		margin: 0 10px;
+		font-size: 25px;
 	}
-	.container .title .content {
-		font-size: 20px;
-	}
-	.container .title iframe {
-		width: 660px;
-		height: 415px;
-	}
-}
-@media (max-width: 767px) {
-	html {
-		background: #e6e6e6;
-	}
-	.container {
-		display: flex;
-		flex-wrap: wrap;		
-		width:90%;
-		margin: 0 auto;
-			
-	}
-	.container .max-width {
-		display: inline-block;
-		align-items: center;
+
+	/*Footer Section*/
+	footer img {
+		text-align: center;
 		margin: 20px 0;
+	}
+}
+
+/* Responsive Media Query code for max-width: 576px */
+
+@media screen and (max-width: 576px) {
+
+	*{
+		max-width: 100%;
+	}
+
+	.container {
+		display: flex;
+		width: 100%;
+		margin: 10px auto;
+		padding: 15px 0;
 		justify-content: center;
 	}
-	.container .max-width .logo img {
-		width: 50px;
-		height: 50px;
-
+	.container .max-width .logo {
+		display: inline-block;
+		width: 80px;
+		height: 90px;
+		margin: 0 10px;	
 	}
 	.container .max-width .content {
+		display: inline-block;
+		text-transform: uppercase;
+		text-align: center;
 		font-size: 10px;
-		text-align: center;
 	}
-	.container .title iframe {
-		width: 560px;
-		height: 415px;
+	.container .max-width .content .capital {
+		text-transform: capitalize;
+		font-size: 10px;
 	}
-}
-@media (max-width: 667px) {
-	html {
-		background: #e6e6e6;
-	}
-	.container {
-		display: flex;
-		flex-wrap: wrap;		
-		width: 90%;
-		margin: 0 auto;
-			
-	}
-	.container .max-width {
-		display: inline-block;
-		align-items: center;
-		margin: 20px 0;
-		justify-content: center;
-	}
-	.container .max-width .logo img {
-		width: 70px;
-		height: 70px;
 
+	/* National Anthem*/
+
+	.container .title h2 {
+		margin:  10px 0;
 	}
-	.container .max-width .content {
-		font-size: 15px;
+
+	.title iframe {
+		width: 350px;
+		height: 270px;
+	}
+
+	.container .title .content p {
+		text-transform: capitalize;
+		padding: 15px 0;
+		margin: 0 10px;
+		font-size: 18px;
+	}
+
+
+	/*Footer Section*/
+
+	footer img {
 		text-align: center;
-	}
-	.container .title iframe {
-		width: 460px;
-		height: 315px;
+		margin: 20px 0;
 	}
 }
